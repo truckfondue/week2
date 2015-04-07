@@ -16,9 +16,14 @@ for (i = 1; i <= numVictims; i++) {
 		phoneNumber: phoneNumber,
 		street: street,
 	}
-	victims.push(victim)
+	victims.push(victim);
 
 }
+
+	var tempVictimNames = [];
+	for (i = 0; i < victims.length; i++) {
+		tempVictimNames.push(victims[i].name)
+	}
 
 // Array of objects
 
@@ -35,11 +40,17 @@ for (i = 1; i <= numVoluteers; i++) {
 		phoneNumber: phoneNumber,
 		street: street,
 	}
-	volunteers.push(volunteer)
+	volunteers.push(volunteer);
+	
 
 }
 
-alert("There are " + victims.length + " victims to the " + volunteers.length + " volunteers.");
+var tempNames = [];
+	for (i = 0; i < volunteers.length; i++) {
+		tempNames.push(volunteers[i].name)
+	}
 
-console.log(victims);
-console.log(volunteers);
+alert("There are " + victims.length + " victims to the " + volunteers.length + " volunteers.\n" + tempNames + "\n" + tempVictimNames);
+
+// console.log(victims);
+// console.log(volunteers);
