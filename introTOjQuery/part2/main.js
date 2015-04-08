@@ -1,28 +1,24 @@
 $(document).on('ready', function() {
 
-	$(".url-link").on("click", function(e){
-		// return false;
-		confirm("Are you certain that you wish to leave this page?");
-		// if false {
-		// 	$(".url-link").remove;
-		// }
-		console.log("clicked the link")
+	$("a").on("click", function(e){
+		var result = confirm("Are you certain that you wish to leave this page?");
+
+		if (result === false) {
+			$(this).remove();
+			e.preventDefault();
+		}
+		// console.log("clicked the link")
 	});
+
+	// $(".url-link").remove();
+
+	$("header").append("!")
   
 });
 
-$("p").hover(function(){$("p").css("color", "pink"); $("header").append("!")}, 
+$("p").hover(function(){$("p").css("color", "pink"); }, 
 	function(){$("p").css("color", "black");	
 });
 
-// $("header").append("!");
 
-$("#href").on("click", function(){
-	confirm("Do you wish to go to " + href);
-	if (true) {
-
-	} else {
-		$(".href").remove;
-	}
-});
 	
