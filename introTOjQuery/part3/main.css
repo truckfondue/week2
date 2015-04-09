@@ -1,0 +1,44 @@
+
+body {
+	position: relative;
+	width: 100%;
+	height: 100%
+}
+div {
+	position: fixed;
+	text-align: center;
+	
+}
+
+button {
+	width: 400px;
+	height: 200px;
+	font-size: 50px;
+	background-color: white;
+	color: red;
+	border: none;
+	padding: 50px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.button-div {
+	position: fixed;
+	text-align: center;
+	background-color: peachpuff;
+	width: 100%;
+	height:100%;
+	padding-top: 200px;
+
+}
+
+.pop-up {
+	position: fixed;
+	background-color: black;
+	/*color: brown;*/
+	width: 100%;
+	height: 100%;
+	padding-top: 200px;
+	
+
+}
