@@ -1,10 +1,8 @@
 $(document).on('ready', function() {
-	
-
-	$('.submit-button').on('click', function(event){
+	$('.erroneous').on('submit', function(event){
 		event.preventDefault();
-		console.log('test');
-		
+		console.log('erroneous test');
+			
 // These variable are accessible via the form allowing the user to make changes to their profile
 
 		var $name = $('.name').val();
@@ -12,15 +10,15 @@ $(document).on('ready', function() {
 		$('#1').text($name);
 
 
-		var $name = $('.bio').val();
+		$name = $('.bio').val();
 		console.log($name);
 		$('#2').text($name);
 
-		var $name = $('.book').val();
+		$name = $('.book').val();
 		console.log($name);
 		$('#3').text($name);
 
-		var $name = $('.jslibraries').val();
+		$name = $('.jslibraries').val();
 		console.log($name);
 		$('#4').text($name);
 
@@ -33,6 +31,8 @@ $(document).on('ready', function() {
 		$('button').text('Show Form');
 		$('form').toggle();
 	});
+
+	// Manipulation of show forms and button when displaying the form
 
 	$('.show-form').on('click', function(){
 		$('form').toggle();
