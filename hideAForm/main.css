@@ -1,0 +1,30 @@
+form {
+	display: none;
+
+}
+
+h1 {
+	text-align: center;
+	background-color: rgb(85, 177, 214);
+
+}
+
+body {
+	background-color: rgb(62, 196, 116)
+}
+
+button {
+	display: inline-table;
+	margin-top: 50px;
+	/*text-align: center;*/
+	
+}
+
+img {
+	/*text-align: center;*/
+	clear: left;
+	padding: 100px;
+	margin: auto;
+}
+
+/*$('form').css('visibility', none);*/
